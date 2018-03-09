@@ -6,7 +6,7 @@ class genreDAO extends DAO {
         require_once(PATH_ENTITIES . 'genre.php');
         $res = $this->queryRow('SELECT * FROM GENRE WHERE id = ?', array($id));
         if ($res) {
-            return new genre($res['id'], $res['libelle']);
+            return new genre( $res['ID'], $res['libelle']);
         }
         else return null;
     }

@@ -7,7 +7,7 @@ $filmDAO = new filmDAO();
 $id_film_choisi = $_GET['id'];
 
 $film = $filmDAO->fromId($id_film_choisi);
-$genre_libelle = $genreDAO->getId($film->getId());
+$genre_libelle = $genreDAO->fromId($film->getId());
 
 require_once(PATH_VIEWS.'page2.php');
 ?>

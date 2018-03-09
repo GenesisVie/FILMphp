@@ -12,9 +12,10 @@
 const DEBUG = false; // production : false; dev : true
 
 // Accès base de données
-const BD_HOST = '';
-const BD_USER = '';
-const BD_PWD = '';
+const BD_HOST = 'localhost';
+const BD_USER = 'p1608126';
+const BD_PWD = '271026';
+const BD_DBNAME = 'p1608126';
 
 // Langue du site
 const LANG ='FR-fr';

@@ -23,7 +23,6 @@
 <label for="film">Quels films souhaitez-vous afficher ?</label></br>
  <input type="submit" value="Valider"/>
  <select name="genre" id="genre">
- <option value="Choisissez un genre"><?php echo $genre_choisi; ?></option>
    <option value ="Tous les films">Tous les films</option>
 
     <?php
@@ -44,7 +43,7 @@
 <?php
 foreach($films as $film) {
 ?>
-  <a href='index.php?page=details&id=<?= $film->getId() ?>'/>
+  <a href='index.php?page=page2&id=<?= $film->getId() ?>'/>
   <?php echo $film->getTitre(); ?>
   </br>
   <img src="<?= PATH_IMAGES.$film->getNomFichier() ?>" height="240px"
