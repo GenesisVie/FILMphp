@@ -9,7 +9,7 @@ abstract class DAO
     // stocke les messages d'erreurs associées au PDOException
     private $_debug;
 
-    public function __construct($debug=null)
+    public function __construct($debug)
     {
         $this->_debug = $debug;
 		$this->_erreur = null;
@@ -19,7 +19,6 @@ abstract class DAO
     {
         return $this->_erreur;
     }
-	
 	
 	protected function beginTransaction()
    {
