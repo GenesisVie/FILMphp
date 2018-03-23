@@ -22,16 +22,20 @@
 						<?= MENU_ACCUEIL ?>
 					</a>
 				</li>
-				
+
     </ul>
     <ul class="nav navbar-nav navbar-right">
-				<li <?php echo ($page=='connexion' ? 'class="active"':'')?>>
-					<a href="connexion.php">
+				<li <?php echo ($page=='login' ? 'class="active"':'')?>>
+					<a href="index.php?page=login">
 						<?= LOGIN ?>
 					</a>
 				</li>
   </ul>
+  <ul class="nav navbar-nav navbar-left">
+      <li <?php echo ($page=='add' ? 'class="active"':'')?>>
+        <a href="index.php?page=add">
+          <?= ADD_FILM ?>
+        </a>
+      </li>
   </div>
 </nav>
-
-

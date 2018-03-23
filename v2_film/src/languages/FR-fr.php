@@ -11,8 +11,8 @@ define('TEXTE_PAGE_404','Oops, la page demandée n\'existe pas !');
 define('MESSAGE_ERREUR',"Une erreur s'est produite");
 define('ERREUR_QUERY', 'Problème d\'accès à la base de données. Contactez l\'administrateur.');
 
-define('LOGIN','Connexion');
-
+define('LOGIN','Log in');
+define('ADD_FILM','ajouter un film');
 define('TITRE', 'Films disponibles');
 define('TITRE_FILM', 'Titre');
 define('AUCUN_FILM', 'Pas de film sélectionné');

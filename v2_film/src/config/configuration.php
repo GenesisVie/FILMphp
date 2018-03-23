@@ -18,7 +18,12 @@ const BD_PWD = 'mamene';
 // Langue du site
 const LANG ='FR-fr';
 // Paramètres du site : nom de l'auteur ou des auteurs
-const AUTEUR = 'Ananda et Kirschléger';
+const AUTEUR = 'Ananda et Kirschleger';
+
+
+//Session:
+const USR = 'admin';
+const MDP = 'admin';
 //dossiers racines du site
 define('PATH_CONTROLLERS','./controllers/c_');
 define('PATH_ENTITIES','./entities/');
@@ -32,7 +37,7 @@ define('PATH_CSS', PATH_ASSETS.'css/');
 define('PATH_IMAGES', PATH_ASSETS.'images/');
 define('PATH_SCRIPTS', PATH_ASSETS.'scripts/');
 //define("PATH_GALERIE",'galerie/');
-//define('PATH_LOG','log/');
+define('PATH_LOG','log/');
 //fichiers
 //define('LOG_BDD','logbdd.txt');
 define('PATH_LOGO', PATH_IMAGES.'logo.png');
