@@ -1,7 +1,3 @@
 <?php
-
-if($_SESSION['logged'] = false)
-{
-require_once(PATH_VIEWS.'login.php');
-}
+require_once(PATH_VIEWS.'add.php');
 ?>

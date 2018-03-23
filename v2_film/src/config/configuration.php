@@ -11,10 +11,10 @@
 
 const DEBUG = false; // production : false; dev : true
 // Accès base de données
-const BD_HOST = 'db';
-const BD_DBNAME = 'film_db';
-const BD_USER = 'pl_bru';
-const BD_PWD = 'mamene';
+const BD_HOST = '';
+const BD_DBNAME = '';
+const BD_USER = '';
+const BD_PWD = '';
 // Langue du site
 const LANG ='FR-fr';
 // Paramètres du site : nom de l'auteur ou des auteurs
@@ -22,7 +22,7 @@ const AUTEUR = 'Ananda et Kirschleger';
 
 
 //Session:
-const USR = 'admin';
+const USR = 'root';
 const MDP = 'admin';
 //dossiers racines du site
 define('PATH_CONTROLLERS','./controllers/c_');

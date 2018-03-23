@@ -16,8 +16,8 @@ require_once('./lib/foncBase.php');
 require_once(PATH_TEXTES.LANG.'.php');
 
 //connexion à la session admin
-session_name('admin');
 session_start();
+
 //vérification de la page demandée
 
 if(isset($_GET['page']))

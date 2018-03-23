@@ -22,8 +22,11 @@
 						<?= MENU_ACCUEIL ?>
 					</a>
 				</li>
-
     </ul>
+<?php
+if(!isset($_SESSION['logged']))
+{
+?>
     <ul class="nav navbar-nav navbar-right">
 				<li <?php echo ($page=='login' ? 'class="active"':'')?>>
 					<a href="index.php?page=login">
@@ -31,11 +34,30 @@
 					</a>
 				</li>
   </ul>
+<?php
+}
+?>
+
+<?php
+if(isset($_SESSION['logged']))
+{
+?>
   <ul class="nav navbar-nav navbar-left">
       <li <?php echo ($page=='add' ? 'class="active"':'')?>>
         <a href="index.php?page=add">
           <?= ADD_FILM ?>
         </a>
       </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+				<li <?php echo ($page=='logout' ? 'class="active"':'')?>>
+					<a href="index.php?page=logout">
+						<?= LOGOUT ?>
+					</a>
+				</li>
+  </ul>
+<?php
+}
+?>
   </div>
 </nav>

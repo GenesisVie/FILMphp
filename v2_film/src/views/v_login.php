@@ -19,8 +19,6 @@
 <?php require_once(PATH_VIEWS.'alert.php'); ?>
 
 <!--  Début de la page -->
-<h3>Connexion</h3>
-
 <?php
 if(!isset($_SESSION['logged']))
 {
@@ -29,7 +27,7 @@ if(!isset($_SESSION['logged']))
 <form action="" method="post">
    Pseudo: <input type="text" name="pseudo" id="pseudo" />
 
-   Mot de passe : <input type="password" name="mdp" id="mot_de_passe" />
+   Mot de passe : <input type="password" name="mot_de_passe" id="mot_de_passe" />
 
    <input type="submit" name="connexion" value="Connexion" />
 </form>
